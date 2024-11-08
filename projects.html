@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Jena!</title>
+    <link rel="stylesheet" href="style copy.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+            <li><a href="experience.html" class="nav-link">Experience</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar" id="sidebar-finished">
+        <h3>Projects</h3>
+        <ul>
+            <li><a href="#project1" class="sidebar-link">NVIDIA AI Innovation Sprint 2024, 1st Place
+                </a></li>
+            <li><a href="#project2" class="sidebar-link">University of Glasgow (SG) Hackathon 2024, 1st Place
+                </a></li>
+            <li><a href="#project3" class="sidebar-link">FYP: Implementation of an IoT HoneyPot Environment
+                </a></li>
+        </ul>
+    </aside>
+
+    <aside class="sidebar" id="sidebar-current" style="display: none;">
+        <h3>Current Projects</h3>
+        <ul>
+            <li><a href="#current-project1" class="sidebar-link">Phisherman: GenAI x Cybersecurity Project</a></li>
+
+        </ul>
+    </aside>
+
+    <!-- Projects Section -->
+    <section id="projects" class="content-section">
+        <h2 class="rainbow-text">Projects</h2>
+
+        <!-- Cute Buttons for Projects -->
+        <div class="button-group">
+            <button class="toggle-button" onclick="showProjects('finished')">Finished</button>
+            <button class="toggle-button" onclick="showProjects('currently')">Currently</button>
+
+        </div>
+
+        <div class="box project-list" id="projects-finished">
+            <p>Here are my finished projects!</p>
+
+            <div class="project-container" id="project1">
+                <h3 class="project-header">NVIDIA AI Innovation Sprint 2024, 1st Place</h3>
+
+                <div class="proof">
+                    <video width="320" height="240" controls>
+                        <source src="demo/ComicFish Demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h4>Problem statement: AI-enabled Consumer Research Analytics. </h4>
+
+                <div class="project-description-box">
+                    <ul>
+                        <li>Fine-tuned Mistral model for text generation: Creating contextually rich and relevant survey
+                            questions.</li>
+                        <li>BERT for text classification: This enabled precise categorization of responses, enhancing
+                            data analysis.</li>
+                        <li>ChromaDB vector database: Provided robust data management and retrieval capabilities.</li>
+                        <li>Dynamic Question Generation: Our AI dynamically crafted questions based on prior responses,
+                            ensuring continuous engagement and comprehensive data collection.</li>
+                        <li>Enhanced User Retention: The platform's interactive and customized questions significantly
+                            increased participant engagement and retention.</li>
+                    </ul>
+
+                </div>
+                <p class="project-contribution">
+                    This solution empowered P&G's consumer research team to extract critical insights while maintaining
+                    high levels of participant engagement.
+                    I helped mostly with fine-tuning the Mistral model,
+                    dynamic question generation and enhancing user retention.
+                    I know how to the other things now thankfully haha.</p>
+            </div>
+
+            <div class="project-container" id="project2">
+                <h3 class="project-header">University of Glasgow (SG) Hackathon 2024, 1st Place</h3>
+                <div class="proof">
+                    <img src="win/glasgow.jfif">
+                </div>
+                <h4 class="project-subheader">Sea-It Grow: Pocket AI for Seagrass Planting and Research.</h4>
+                <div class="project-description-box">
+                    <ul>
+                        <li>Tool that aids in this local planting and research.</li>
+                        <li>Utilising Data and AI, this tool allows both researchers and volunteers to predict if the
+                            area is suitable for seagrass growth, survival rates and effective ways to plant it.</li>
+                        <li>Collect data (IOT), Predict, Monitor. A pocket seagrass researcher on the go.</li>
+                    </ul>
+                </div>
+                <p class="project-contribution">I prototyped an ARIMA model to forecast future seagrass growth and
+                    survival rates, based on environmental data trends + ChatGPT to summarise, and explain the results.
+
+                    There was so much to learn from the two lecturers who judged our solution, and we are so grateful!
+                    It was the kind of feedback we really needed.</p>
+
+            </div>
+
+
+            <div class="project-container" id="project3">
+                <h3 class="project-header">FYP: Implementation of an IoT HoneyPot Environment</h3>
+                <div class="proof">
+                    <div class="slideshow-container">
+                        <div class="slideshow-slide fade">
+                            <img src="demo/fyp-diagram.png" alt="Image 1" class="slide">
+                        </div>
+                        <div class="slideshow-slide fade">
+                            <img src="demo/fyp-dataflow.png" alt="Image 2" class="slide">
+                        </div>
+                        <div class="slideshow-slide fade">
+                            <img src="demo/fyp-attack.png" alt="Image 3" class="slide">
+                        </div>
+
+                    </div>
+                </div>
+
+                <h4 class="project-subheader">Building an IoT Honeypot with Edge and Network Analytics</h4>
+
+                <div class="project-description-box">
+                    <ul>
+                        <li>Designed and deployed a IoT honeypot environment with EdgeX as the IoT gateway and
+                            NetWitness Platform for analytics.</li>
+                        <li>Configured IoT devices and IT infrastructure to support a realistic honeypot setup.</li>
+                        <li>Developed log parsing and correlation rules specific to IoT attacks</li>
+                        <li>Implemented SNORT IDS for network intrusion detection and used NetWitness Investigator
+                            for
+                            detailed analysis.</li>
+                    </ul>
+                </div>
+                <p class="project-contribution">I was the group leader for my final year project. I took charge of
+                    the
+                    EdgeX setup, IoT sensor & Azure Cloud communication. I developed a custom correlation rule on
+                    the
+                    RSA NetWitness platform to detect my attack sequence. Recognising that certain commands and
+                    movements were not captured by NetWitnese alone, I created additional rules using SNORT and
+                    NetWitness Investigator to get more comprehensive coverage.</p>
+                    
+                <p class="project-contribution">Through this experience, I gained valuable insights into real-world
+                    security challenges, like the importance of centralized log management. In an actual deployment,
+                    integrating multiple data log sources to provide a holistic security overview.</p>
+                <a href="https://github.com/jj2202/IoT-Honeypot" button class="project-button">GitHub Repository</a>
+            </div>
+        </div>
+
+        <!-- Projects Section - Currently -->
+        <div class="box project-list" id="projects-currently" style="display: none;">
+            <p>Here’s what I'm currently working on!</p>
+
+            <div class="project-container" id="current-project1">
+                <h3 class="project-header">Phisherman: GenAI x Cybersecurity Project</h3>
+
+                <!-- <div class="proof">
+                    <video width="320" height="240" controls>
+                        <source src="demo/Phisherman-Demo.mp4" type="video/mp4">
+                    </video>
+                </div> -->
+                <div class="project-description-box">
+                    <p>Currently..</p>
+                    <ul>
+                        <li>Drag & Drop Email Analysis: Upload or drag emails for phishing detection.</li>
+                        <li>Ensemble Classification: Three machine learning models (Random Forest, Extra Trees,
+                            LightGBM) analyze emails to determine phishing probability.</li>
+                        <li>Large Language Model (LLM) Integration: Analyzes email context (sender, receiver, subject,
+                            body, URLs) for a deeper understanding.</li>
+                        <li>"Maybe" Label for Disagreements: If models disagree, the email is labeled "maybe" phishing,
+                            prompting caution.</li>
+                        <li>GPT-powered Explanation: GPT provides a brief explanation for flagged phishing emails.</li>
+                        <li>VirusTotal-inspired Accuracy & Clarity: Clear results with explanations for each email.</li>
+                    </ul>
+
+                    <p>Future plans</p>
+                    <ul>
+                        <li>Interactive Chatbot for Education:
+                            <ul>
+                                <li>Real-time feedback on phishing indicators and protective tips.</li>
+                                <li>Educational resource explaining phishing and cybersecurity.</li>
+                            </ul>
+                        </li>
+                        <li>Backend Streamlining with n8n:
+                            <ul>
+                                <li>Integration for automated and efficient backend workflows.</li>
+                                <li>Leverage n8n's phishing analysis workflow for URL scanning.</li>
+                                <li>Enhance explanations about the tool's inner workings.</li>
+                            </ul>
+                        </li>
+                        <li>Browser Extension Development OR Outlook Plugin
+                            <ul>
+                                <li>Develop a browser extension for real-time phishing detection in email inboxes (e.g.,
+                                    Gmail).</li>
+                                <li>Easy access to chatbot UI for immediate guidance.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p class="project-contribution">Thrilled to be part of this innovative project! My contributions include
+                    training the ML model and working on the backend. </p>
+
+            </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+s
+
+</html>

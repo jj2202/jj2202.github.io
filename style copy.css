@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'Bryndan Write';
+    src: url('fonts/BryndanWrite.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'More Sugar';
+    src: url('fonts/more-sugar.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url('http://www.rw-designer.com/cursor-extern.php?id=201623'),auto !important;
+
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #B8D7FE;
+    padding: 0.6rem 0; /* Reduced padding */
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Bryndan Write';
+    font-size: 15px;
+}
+.nav-link.active {
+    font-weight: bold;}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    width: 180px;
+    background-color: #ffecf0; /* Light pink background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Bryndan Write';
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff7fa0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar-link {
+    color: #6d5b2b;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #ff9fb8; 
+}
+
+.sidebar-link.active {
+    font-weight: bold;
+    background-color: #ff9fb8; 
+}
+
+@media (max-width: 768px) {
+    #sidebar-finished, 
+    #sidebar-current, 
+    #experience-sidebar-finished, 
+    #experience-sidebar-current {
+        display: none !important; /* Ensure all sidebars are hidden on mobile */
+    }
+
+
+    /* Adjust content to take full width when sidebar is hidden */
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Adjust slideshow container to be more responsive on mobile */
+    .slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Section Styling */
+section {
+    padding: 70px 20px; /* Reduced top padding to bring section closer */
+    min-height: 100vh;
+    font-family: 'Bryndan Write';
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+
+}
+
+section h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #ff9fb8;
+    text-shadow: 
+    1px 1px 0px #802039,  /* outline to the right and down */
+    -1px -1px 0px #802039, /* outline to the left and up */
+    -1px 1px 0px #802039,  /* outline to the left and down */
+    1px -1px 0px #802039  /* outline to the right and up */
+}
+
+.about-card {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-card .profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #ffb6c1; /* Pink border */
+}
+
+.about-card .about-text p {
+    font-family: 'Bryndan Write';
+    font-size: 14px;
+    color: #6d5b2b;
+    margin-bottom: 10px;
+}
+
+
+.about-box {
+    border: 5px solid #ffb6c1; /* Pink border */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+}
+
+.about-box p, .proof p, .box p {
+    font-family: 'Bryndan Write';
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #6d5b2b;
+}
+
+.about-box ul, .box ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-box p, .box p {
+    margin-top: 10px; 
+}
+
+
+.profile-container {
+    position: relative;
+    width: 180px; /* Adjust width as needed */
+    height: 180px; /* Ensure height matches width for a perfect circle */
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid #ffb6c1; 
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.button-group {
+    margin: 10px 0;
+}
+
+/* Cute pink rounded buttons */
+.toggle-button {
+    background-color: #ff9fb8; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-family: 'Bryndan Write';
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #ff7fa0; /* Darker pink on hover */
+}
+
+.toggle-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff7fa0; /* Slight glow on focus */
+}
+
+
+.project-container {
+    border: 2px solid #fcffbd;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.project-header {
+    background-color: #fcffbd;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Bryndan Write';
+    text-align: center;
+    border: 2px solid #fcffbd;
+}
+
+.project-subheader {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Bryndan Write';
+    text-align: center;
+}
+
+.project-subheader a {
+    color: inherit; /* Inherit color from parent */
+}
+
+.project-subheader a:hover {
+    color: #ff7fa0;
+}
+
+
+.project-description-box {
+    border: 2px solid #fcffbd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 450px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.project-description-box ul {
+    list-style: disc;
+    padding-left: 20px;
+    color: #6d5b2b;
+    font-family: 'Bryndan Write';
+    font-size: 14px;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    
+}
+
+.project-contribution {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: 'Bryndan Write';
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project-button {
+    background-color: #ff9fb8; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    font-family: 'Bryndan Write';
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Positioning to the right within the container */
+    bottom: 10px; /* Adjustingg to sit at the bottom right of the container */
+    transition: background-color 0.3s ease;
+    text-decoration:none;
+}
+
+.project-button:hover {
+    background-color: #ff7fa0; 
+}
+
+.project-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff7fa0; /* Slight glow on focus */
+}
+
+.proof {
+    border-radius: 15px;
+    padding: 15px; 
+    width: 400px; 
+    margin: 20px auto; 
+    text-align: center; /
+}
+
+.proof video, .proof img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.slideshow-container {
+    position: relative;
+    width: 300x; /* Fixed width */
+    height: 300px; /* Fixed height */
+    margin: 0 auto; /* Center in the project box */
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fcffbd;
+}
+
+.slideshow-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure images scale within the fixed container */
+}

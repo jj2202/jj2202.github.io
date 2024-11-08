@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Jena!</title>
+    <link rel="stylesheet" href="style copy.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="about.html" class="nav-link">About Me</a></li>
+            <li><a href="projects.html" class="nav-link">Projects</a></li>
+            <li><a href="experience.html" class="nav-link active">Experience</a></li>
+        </ul>
+    </nav>
+
+    <aside class="sidebar" id="experience-sidebar-finished">
+        <h3>Experience</h3>
+        <ul>
+            <li><a href="#experience1" class="sidebar-link">Vice President in Training for Hackstart</a></li>
+            <li><a href="#experience2" class="sidebar-link">Certifications</a></li>
+            <li><a href="#experience3" class="sidebar-link">Student Volunteer Recognition Programme (SVRP) 2024 Bronze
+                    Award</a></li>
+            <li><a href="#experience4" class="sidebar-link">STEMFirst UWS Fintech Programme</a></li>
+            <li><a href="#experience5" class="sidebar-link">Competitions I have taken part in</a></li>
+            <li><a href="#experience6" class="sidebar-link">CTFs</a></li>
+        </ul>
+    </aside>
+
+    <aside class="sidebar" id="experience-sidebar-current" style="display: none;">
+        <h3>What am I doing?</h3>
+        <ul>
+            <li><a href="#current-experience1" class="sidebar-link">Studying for Certifications</a></li>
+        </ul>
+    </aside>
+
+    <!-- Experience Section -->
+    <section id="projects" class="content-section">
+        <h2 class="rainbow-text">Experience</h2>
+        <!-- Cute Buttons for Experience -->
+        <div class="button-group">
+            <button class="toggle-button" onclick="showExperience('finished')">Finished</button>
+            <button class="toggle-button" onclick="showExperience('currently')">Currently</button>
+        </div>
+
+        <div class="box experience-list" id="experience-finished">
+            <p>Here’s what I have done in the past!</p>
+            <div class="project-container" id="experience1">
+                <h3 class="project-header">Vice President in Training for Hackstart</h3>
+                <div class="project-description-box">
+                    <h4 class="project-subheader">HackStart is a CCA for Republic Polytechnic students, uniting them to
+                        join hackathons, gain experience, build technical skills, and grow together.</h4>
+
+                    <div class="proof">
+                        <img src="demo/hackstart.jfif">
+                    </div>
+
+                </div>
+                <p class="project-contribution">Organised and facilitated training for project members preparing for
+                    hackathons and competitions,
+                    ensuring they have the necessary foundation and knowledge.
+                    I helped to source resources and connect project members with lecturers to provide guidance and
+                    mentorship. It was for a short term but it was still fulfilling nonetheless! I want to be a
+                    lecturer remember.. So this was like a first exposure to something similar, hehe.</p>
+            </div>
+
+            <div class="project-container" id="experience2">
+                <h3 class="project-header">Certifications</h3>
+                <div class="project-description-box">
+                    <h4 class="project-subheader">These are certifications I have!</h4>
+
+                    <div class="proof">
+                        <div class="project-subheader">
+                            <a href="https://www.credly.com/badges/2fb14e7f-84b2-478e-80e1-1fb468cdcb7b/linked_in_profile"
+                                target="_blank">Google Cybersecurity Professional Certificate</a>
+                        </div>
+
+                        <p>AI Ethics and Governance (Associate) Certification</p>
+
+                        <div class="project-subheader">
+                            <a href="https://learn.aisingapore.org/certificate-verification/83898DED22-7F05A54BEF-1454B3ACE/"
+                                target="_blank">AI4I® – Literacy in AI</a>
+                        </div>
+
+                        <div class="project-subheader">
+                            <a href="https://www.credly.com/badges/6d31fdae-c174-4ebb-8848-44c74a8c5617"
+                                target="_blank">Fundamentals of Agile Project Management</a>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="project-contribution">I studied for these.. I have 2 more cybersecurity certifications I am
+                    working on.</p>
+            </div>
+
+            <div class="project-container" id="experience3">
+                <h3 class="project-header">Student Volunteer Recognition Programme (SVRP) 2024 Bronze Award</h3>
+                <div class="project-description-box">
+                    <h4 class="project-subheader">It's meeeee!</h4>
+
+                    <div class="proof">
+                        <img src="demo/placeholder.png">
+
+                    </div>
+                </div>
+                <p class="project-contribution">I have this bronze award because I participated in several
+                    cybersecurity, technology related competitions and events! These include CTFs, Hackathons..I had
+                    the privilege of attending StandCon 2023, and I am sincerely grateful to my school for
+                    nominating me for the AISP SVRP award. </p>
+            </div>
+
+            <div class="project-container" id="experience4">
+                <h3 class="project-header">STEM First UWS Fintech Programme</h3>
+                <div class="project-description-box">
+                    <div class="proof">
+                        <img src="demo/stemfirst.jfif">
+                    </div>
+                </div>
+                <p class="project-contribution">Participating in the STEM First Fintech Programme was an incredible
+                    experience that deepend my passion for tech. Connecting with other girls from my school, but
+                    from different diplomas was inspiring and empowering.. </p>
+            </div>
+
+            <div class="project-container" id="experience5">
+                <h3 class="project-header">Competitions I have taken part in</h3>
+                <div class="project-description-box">
+                    <h3 class="project-subheader">
+                        <a href="https://outreach.straitsinteractive.com/gen-ai-prompt-challenge"
+                            target="_blank">National AI Youth Prompt Design</a>
+                    </h3>
+
+                    <div class="proof">
+                        <img src="demo/promptdesign.png">
+                    </div>
+
+                    <p class="project-contribution">
+                        I joined the National AI Youth Prompt Design Challenge for youth where I leveraged
+                        Generative AI to learn how to build chatbots and tools, designing applications like
+                        storyteller apps, learning tools, and role-playing games. The challenge provided an
+                        immersive experience that emphasized creativity and problem-solving skills.
+                    </p>
+
+                    <p class="project-contribution">Our theme we chose was HR :) I think the most interesting part was
+                        learning about how to defend our chatbot against prompt injections. This was my first exposure
+                        to it.
+                    </p>
+                </div>
+
+                <div class="project-description-box">
+                    <h3 class="project-subheader">
+                        <a href="https://www.dstabrainhack.com/activities/seetrue" target="_blank">BrainHack SEETRUE
+                            2024</a>
+                    </h3>
+
+                    <p class="project-contribution">
+                        I joined the SeeTrue competition for an exciting dive into cybersecurity, focusing on uncovering
+                        fake news and tackling misinformation. The event featured engaging talks and a hackathon where
+                        participants used open-source tools to address real-world misinformation challenges, honing
+                        their fact-checking skills and enhancing their ability to spot and combat fake news.
+                    </p>
+
+                    <p class="project-contribution">
+                        In the end.. We got 150+ points but not top 3 :/ I really feel like we could have won this one
+                        but.. generating pictures takes so long. We want to go back next year though! :)
+                    </p>
+                </div>
+
+                <div class="project-description-box">
+                    <h3 class="project-subheader">
+                        <a href="https://pmi.org.sg/outreach/academic-overview/student-competition" target="_blank">PMI
+                            SG Chapter Student Project Management Competition 2024</a>
+                    </h3>
+
+                    <p class="project-contribution">
+                        I genuinely really enjoyed this experience! Project management is an area outside of tech that I
+                        find really cool. This was really an out-of-this-world project, and brainstorming with my
+                        friends to get it off the ground made it all the more exciting. </p>
+
+                    <p class="project-contribution">
+                        I really hope we get picked for finals!!
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-container" id="experience6">
+                <h3 class="project-header">CTFs</h3>
+                <div class="project-description-box">
+                    <h3 class="project-subheader">Operation Flagstorm Capture the Flag!</h3>
+
+                    <p class="project-contribution">
+                        HexTech hosted this CTF and it was my first introduction to CTF.
+                    </p>
+
+                </div>
+
+                <div class="project-description-box">
+                    <div class="project-subheader">
+                        <a href="https://lagncra.sh/" target="_blank">Lag 'N Crash 2024 CTF</a>
+                    </div>
+
+                    <p class="project-contribution">
+                        Participated in a CTF competition featuring multiple categories for students. Collaborated with
+                        fellow RP DISM students to gain new insights.
+                    </p>
+                </div>
+
+                <div class="project-description-box">
+                    <div class="project-subheader">
+                        <a href="https://8059blank.github.io/hackac/HACK@AC-Information/" target="_blank">HACK@AC
+                            2024</a>
+                    </div>
+
+                    <p class="project-contribution">
+                        Participated in a CTF competition by ACS (Independent) where I earned points by solving
+                        challenges related to cryptography, data security, and other major cybersecurity issues
+                    </p>
+                </div>
+
+                <div class="project-description-box">
+                    <div class="project-subheader">
+                        <a href="https://crucible.dreadnode.io/challenges/event/govtech-2024/info"
+                            target="_blank">GovTech AI & Cybersecurity CTF</a>
+                    </div>
+
+                    <p class="project-contribution">
+                        I was excited to join this because I like both AI & Cybersecurity.. Hehe. The challenges proved
+                        harder than I thought. I like using the platform the CTF challenges are on to learn more about
+                        red teaming for AI LLMs. I didn't even know that was a thing until this competition. Pleasant to
+                        find out...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section - Currently -->
+        <div class="box experience-list" id="experience-currently" style="display: none;">
+            <p>Here’s what I’m currently doing!</p>
+
+            <div class="project-container" id="current-experience1">
+                <h3 class="project-header">Studying for Certifications</h3>
+                <div class="project-description-box">
+                    <div class="project-subheader">
+                        <a href="https://www.aisp.sg/qisp_exam.html">QiSP Qualified Information Security Professional
+                            (QISP®)</a>
+                    </div>
+                    <ul>
+                        <li>The QISP® programme is for information security professionals with one to five years of
+                            working experience in Singapore.
+                            It is a two-hour and forty minutes online examination with 100 multiple-choice and
+                            multiple-answer questions in English.</li>
+                    </ul>
+                    <div class="project-subheader">
+                        <a href="https://www.isc2.org/certifications/cc">ISC2 Certified in Cybersecurity Entry-Level
+                            Certification</a>
+                    </div>
+                    <ul>
+                        <li>The entry-level certification
+                            proves you have the foundational knowledge, skills and abilities for an entry- or
+                            junior-level cybersecurity role.</li>
+                    </ul>
+
+
+                    <div class="project-subheader">
+                        <a href="https://www.scs.org.sg/events/details/aws-skill-builder-certification-programme">AWS
+                            Skill Builder Certification Programme</a>
+                    </div>
+
+
+                    <ul>
+                        <li>The AWS Skill Builder Certification Program provides a solid foundation in AI, covering
+                            essential concepts and advanced machine learning techniques. With hands-on labs and
+                            expert-led training,</li>
+                    </ul>
+                </div>
+                <p class="project-contribution">I am set to take these examinations in December.. Pray for me.</p>
+
+            </div>
+
+
+        </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
