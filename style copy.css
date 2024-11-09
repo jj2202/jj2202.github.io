@@ -339,7 +339,7 @@ section h2 {
 .proof {
     border-radius: 15px;
     padding: 15px; 
-    width: 400px; 
+    max-width: 400px;
     margin: 20px auto; 
     text-align: center; /
 }
