@@ -125,6 +125,14 @@ window.addEventListener('resize', () => {
     }
 });
 
+window.addEventListener('scroll', function () {
+    const toolbar = document.getElementById('scroll-toolbar');
+    if (window.scrollY > 150) { // Show toolbar after scrolling 300px
+        toolbar.classList.add('visible');
+    } else {
+        toolbar.classList.remove('visible');
+    }
+});
 
 let slideIndex = 0;
 let slideInterval;
