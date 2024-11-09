@@ -389,3 +389,37 @@ section h2 {
     height: 100%;
     object-fit: contain; /* Ensure images scale within the fixed container */
 }
+
+.bottom-toolbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ff9fb8;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    z-index: 1000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bottom-toolbar.visible {
+    transform: translateY(0); /* Slide in when visible */
+}
+
+.bottom-toolbar button {
+    background-color: white;
+    color: #ff9fb8;
+    border: none;
+    border-radius: 15px; /* Smaller radius for a thinner look */
+    padding: 5px 10px; /* Thinner padding */
+    font-family: 'Bryndan Write';
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-toolbar button:hover {
+    background-color: #ff7fa0;
+}
