@@ -11,6 +11,47 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@media (max-width: 768px) {
+    #sidebar-finished, 
+    #sidebar-current, 
+    #experience-sidebar-finished, 
+    #experience-sidebar-current {
+        display: none !important; /* Ensure all sidebars are hidden on mobile */
+    }
+
+
+    /* Adjust content to take full width when sidebar is hidden */
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* Adjust slideshow container to be more responsive on mobile */
+    .slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .proof {
+        width: 90%; /* Makes the proof box take up most of the screen width */
+        padding: 10px;
+    }
+
+    .proof img, .proof video {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-button {
+        display: block;
+        width: 80%; 
+        margin: 10px auto 0 auto; /* Center */
+        position: relative; /* Remove absolute positioning */
+        text-align: center; 
+    }
+}
+
 /* Basic reset */
 * {
     margin: 0;
@@ -94,27 +135,6 @@ nav ul li a {
     background-color: #ff9fb8; 
 }
 
-@media (max-width: 768px) {
-    #sidebar-finished, 
-    #sidebar-current, 
-    #experience-sidebar-finished, 
-    #experience-sidebar-current {
-        display: none !important; /* Ensure all sidebars are hidden on mobile */
-    }
-
-
-    /* Adjust content to take full width when sidebar is hidden */
-    .content {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    /* Adjust slideshow container to be more responsive on mobile */
-    .slideshow-container {
-        max-width: 100%;
-        height: auto;
-    }
-}
 /* Section Styling */
 section {
     padding: 70px 20px; /* Reduced top padding to bring section closer */
